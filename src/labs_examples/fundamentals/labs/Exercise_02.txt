@@ -10,7 +10,7 @@ Initializing git folder
         b. Make new file
         c. Add file
         d. Commit file
-        c. On Github, create new git_practice repository
+        c. On Github, create new _02 repository
         d. Add this new GitHub repository as a new "remote" to your local Git repo. You can do this by using the command
             git remote add <ANY_NAME> <URL_OF_NEW_GITHUB_REPO.git>
         d. Push commit file to Github
@@ -32,3 +32,242 @@ Cloning repository from Github
     3. Create new repository on Github
     4. Add new remote on local machine
     5. Push to new Github repository
+
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads
+    λ mkdir git_practice
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads
+    λ cd git_practice
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice
+    λ ls
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice
+    λ git init
+    Initialized empty Git repository in C:/Users/nino/Documents/Working_directory/CodingNomads/git_practice/.git/
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ type nul> newfile.txt
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ ls
+    newfile.txt
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ type nul> newfile2.txt
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ vim newfile2.txt
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ ls
+    newfile.txt  newfile2.txt
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git remote add GITPRACTICE https://github.com/knjcap/git_practice.githttps://github.com/knjcap/git_practice.git
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git status
+    On branch master
+
+    No commits yet
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            newfile.txt
+            newfile2.txt
+
+    nothing added to commit but untracked files present (use "git add" to track)
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git add newfile.txt
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git add newfile2.txt
+    warning: in the working copy of 'newfile2.txt', LF will be replaced by CRLF the next time Git touches it
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git status
+    On branch master
+
+    No commits yet
+
+    Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
+            new file:   newfile.txt
+            new file:   newfile2.txt
+
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git remote -v
+    GITPRACTICE     https://github.com/knjcap/git_practice.githttps://github.com/knjcap/git_practice.git (fetch)
+    GITPRACTICE     https://github.com/knjcap/git_practice.githttps://github.com/knjcap/git_practice.git (push)
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git remote remove https://github.com/knjcap/git_practice.githttps://github.com/knjcap/git_practice.git
+    error: No such remote: 'https://github.com/knjcap/git_practice.githttps://github.com/knjcap/git_practice.git'
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git remote remove GITPRACTICE
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git remove -v
+    git: 'remove' is not a git command. See 'git --help'.
+
+    The most similar command is
+            remote
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git remote add https://github.com/knjcap/git_practice.git
+    usage: git remote add [<options>] <name> <url>
+
+        -f, --fetch           fetch the remote branches
+        --tags                import all tags and associated objects when fetching
+                              or do not fetch any tag at all (--no-tags)
+        -t, --track <branch>  branch(es) to track
+        -m, --master <branch> master branch
+        --mirror[=(push|fetch)]
+                              set up remote as a mirror to push to or fetch from
+
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git remote add GITPRACTICE https://github.com/knjcap/git_practice.git
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git remote -v
+    GITPRACTICE     https://github.com/knjcap/git_practice.git (fetch)
+    GITPRACTICE     https://github.com/knjcap/git_practice.git (push)
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git status
+    On branch master
+
+    No commits yet
+
+    Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
+            new file:   newfile.txt
+            new file:   newfile2.txt
+
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git push GITPRACTICE
+    fatal: The current branch master has no upstream branch.
+    To push the current branch and set the remote as upstream, use
+
+        git push --set-upstream GITPRACTICE master
+
+    To have this happen automatically for branches without a tracking
+    upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git status
+    On branch master
+
+    No commits yet
+
+    Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
+            new file:   newfile.txt
+            new file:   newfile2.txt
+
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git commit -m "exercise_02"
+    [master (root-commit) 20a706e] exercise_02
+     2 files changed, 1 insertion(+)
+     create mode 100644 newfile.txt
+     create mode 100644 newfile2.txt
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git status
+    On branch master
+    nothing to commit, working tree clean
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git push GITPRACTICE
+    fatal: The current branch master has no upstream branch.
+    To push the current branch and set the remote as upstream, use
+
+        git push --set-upstream GITPRACTICE master
+
+    To have this happen automatically for branches without a tracking
+    upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git push -u origin master
+    fatal: 'origin' does not appear to be a git repository
+    fatal: Could not read from remote repository.
+
+    Please make sure you have the correct access rights
+    and the repository exists.
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master)
+    λ git push -u GITPRACTICE master
+    Enumerating objects: 4, done.
+    Counting objects: 100% (4/4), done.
+    Delta compression using up to 8 threads
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (4/4), 274 bytes | 91.00 KiB/s, done.
+    Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://github.com/knjcap/git_practice.git
+     * [new branch]      master -> master
+    branch 'master' set up to track 'GITPRACTICE/master'.
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ ls
+    newfile.txt  newfile2.txt
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ cd
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ ls
+    newfile.txt  newfile2.txt
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ git remote -v
+    GITPRACTICE     https://github.com/knjcap/git_practice.git (fetch)
+    GITPRACTICE     https://github.com/knjcap/git_practice.git (push)
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ git remote add GITPRACTICE2 https://github.com/knjcap/git_practice_2.git
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ git remote -v
+    GITPRACTICE     https://github.com/knjcap/git_practice.git (fetch)
+    GITPRACTICE     https://github.com/knjcap/git_practice.git (push)
+    GITPRACTICE2    https://github.com/knjcap/git_practice_2.git (fetch)
+    GITPRACTICE2    https://github.com/knjcap/git_practice_2.git (push)
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE)
+    λ git push -u GITPRACTICE2 master
+    Enumerating objects: 4, done.
+    Counting objects: 100% (4/4), done.
+    Delta compression using up to 8 threads
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (4/4), 274 bytes | 137.00 KiB/s, done.
+    Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://github.com/knjcap/git_practice_2.git
+     * [new branch]      master -> master
+    branch 'master' set up to track 'GITPRACTICE2/master'.
+
+    C:\Users\nino\Documents\Working_directory\CodingNomads\git_practice (master -> GITPRACTICE2)
