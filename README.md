@@ -1,7 +1,7 @@
 
 
 
-# CodingNomads Java Fundamentals - test Nino update
+# CodingNomads Java Fundamentals - test Nino update (branch)
 
 This project contains a variety of textbook examples and labs focused on Java labs_examples.fundamentals.
 
