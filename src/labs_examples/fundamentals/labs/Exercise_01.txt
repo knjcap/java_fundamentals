@@ -1,3 +1,4 @@
+
 Fundamentals Exercise 1: CLI
      Perform the following tasks using the CLI and copy and paste the commands and results below
 
@@ -22,4 +23,149 @@ Example Output:
     1. cd ~/Documents/CodingNomads/
     2. mkdir Terminal_testing
     3. //...
+
+KNJCAP exercice 01 - completed
+
+C:\Users\nino\Documents
+λ cd working_directory
+
+C:\Users\nino\Documents\Working_directory
+λ ls
+CodingNomads/  HelloWorld2.java
+
+C:\Users\nino\Documents\Working_directory
+λ cd codingnomads
+
+C:\Users\nino\Documents\Working_directory\CodingNomads
+λ mkdir Terminal_testing
+
+C:\Users\nino\Documents\Working_directory\CodingNomads
+λ cd Terminal_testing
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ type nul > test1.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ type nul > test2.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ type nul > test3.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ ls
+test1.txt  test2.txt  test3.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ print.txt
+'print.txt' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ ls
+test1.txt  test2.txt  test3.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ mkdir insidefolder
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ ls
+insidefolder/  test1.txt  test2.txt  test3.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ copy test1.txt
+The file cannot be copied onto itself.
+        0 file(s) copied.
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ copy test1.txt \insidefolder
+Access is denied.
+        0 file(s) copied.
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ cp test1.txt \Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ cd insidefolder
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ ls
+test1.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ cd..
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ move test2.txt \Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+        1 file(s) moved.
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ ls
+insidefolder/  test1.txt  test3.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing
+λ cd insidefolder
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ ls
+test1.txt  test2.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ remove test1.txt
+'remove' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ rm test1.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ ls
+test2.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ mkdir newfolder
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ rm newfoler
+rm: cannot remove 'newfoler': No such file or directory
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ rm newfolder
+rm: cannot remove 'newfolder': Is a directory
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ ls
+newfolder/  test2.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ rmdir newfolder
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ ls
+test2.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ vim test2.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ cat print test2.txt
+cat: print: No such file or directory
+ challenge no 9... write some tex inside a file
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ grep write test2.txt
+ challenge no 9... write some tex inside a file
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ grep anything test2.txt
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ grep write test2.txt
+ challenge no 9... write some tex inside a file
+
+C:\Users\nino\Documents\Working_directory\CodingNomads\Terminal_testing\insidefolder
+λ
 
