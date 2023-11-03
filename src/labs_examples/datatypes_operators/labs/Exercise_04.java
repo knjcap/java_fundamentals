@@ -28,7 +28,7 @@ class RelationalOperators {
         }
         if (b == c) {
             System.out.println("b is equal to c");
-            
+
         }
 
     }
