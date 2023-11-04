@@ -22,6 +22,10 @@ public class Exercise_07 {
         System.out.print("Enter a number in days between 1 and 1,000,000: ");
         // assign input to variable as int
         int days = scanner.nextInt();
+        int secondsInADay = 86400;
+        long totalSecondsUserInputted = secondsInADay * days;
+        System.out.println("The equivalent seconds is " +totalSecondsUserInputted);
+
 
         // write completed code here
 
