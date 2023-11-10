@@ -28,7 +28,7 @@ public class Exercise_01 {
         else
             System.out.println( number+ " is odd");
 
-        // write completed code here
+        // write completed code her
 
     }
 }
