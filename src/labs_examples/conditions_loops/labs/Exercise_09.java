@@ -1,5 +1,7 @@
 package labs_examples.conditions_loops.labs;
 
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 9: break
  *
@@ -8,4 +10,12 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_09 {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++ ) {
+            if (i == 5)
+                break;
+            System.out.println ("i: " +i);
+        }
+        System.out.println("Out of Loop");
+    }
 }
