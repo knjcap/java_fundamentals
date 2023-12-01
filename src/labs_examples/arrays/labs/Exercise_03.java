@@ -1,5 +1,7 @@
 package labs_examples.arrays.labs;
 
+import java.util.ArrayList;
+
 /**
  *  2D Array
  *
@@ -18,6 +20,25 @@ package labs_examples.arrays.labs;
 public class Exercise_03 {
 
     public static void main(String[] args) {
-        
+        int counter =3;
+        int [][] numberRequested = new int[5][5];
+            for (int i=0; i<numberRequested.length; i++) {
+                for (int j=0; j<numberRequested[i].length; j++) {
+                    //if (counter % 3 ==0) {
+                    numberRequested[i][j] = counter;
+                    counter = counter + 3;
+
+                }
+            }
+
+            System.out.println("The 2D array is: ");
+                for (int i=0; i<numberRequested.length; i++) {
+                    for (int j = 0; j < numberRequested[i].length; j++) {
+                        System.out.print(numberRequested[i][j] + " ");
+                    }
+                    System.out.println();
+
+
+                }
     }
 }
