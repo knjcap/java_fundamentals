@@ -10,4 +10,11 @@ package labs_examples.arrays.labs;
 
 public class Exercise_04 {
 
+    public static void main(String[] args) {
+        String[] names = {"Nino", "Jocelyn", "Katkat", "Khyle"};
+        for (String i: names) {
+            System.out.println(i);
+        }
+    }
+
 }

@@ -1,4 +1,5 @@
 package labs_examples.arrays.labs;
+import java.util.ArrayList;
 
 /**
  *  ArrayLists
@@ -10,4 +11,14 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_07 {
+    public static void main(String[] args) {
+        ArrayList<String> fraternities = new ArrayList<String>();
+        fraternities.add("Tau Gamma Phi");
+        fraternities.add("APO");
+        fraternities.add("Akrho");
+        fraternities.add("SRB");
+        fraternities.remove("SRB");
+        System.out.println(fraternities);
+
+    }
 }

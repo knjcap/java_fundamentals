@@ -33,6 +33,7 @@ public class Exercise_01 {
         System.out.println("The elements of the array are: ");
         for (int i = 0; i < 10; i++) {
             System.out.print(arrayNumbersFromUser[i] + " ");
+            //System.out.println();
 
         }
 
