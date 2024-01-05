@@ -34,3 +34,5 @@ public class Exercise_03 {
         C_1 c = new C_1();
     }
 }
+
+// because the order is superclass first, the subclass unless "this" keyword is defined

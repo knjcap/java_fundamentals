@@ -22,3 +22,5 @@ public class Exercise_02 {
         System.out.println(a.i);
     }
 }
+
+// because the println is pointing to reference variable on A instead of object B?
